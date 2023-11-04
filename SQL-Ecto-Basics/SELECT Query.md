@@ -4,7 +4,7 @@ To view a table, or any columns from a table, `SELECT` and `FROM` are used.  As 
 
 ### **Example**
 
- ![[Screenshot from 2023-10-31 16-32-07.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/1d47f215-83c5-4fa9-8ef6-7f663bf8cf7f)
 
 The above table is the `countries` table. Let's select only `country_name` column from it.
 
@@ -16,7 +16,7 @@ On the above query, `country_name` is the column name from the table called `cou
 
 Result:
 
-![[Screenshot from 2023-10-31 16-37-13.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/5be15a01-e89a-4d0b-815b-b69561020f6b)
 
 if you wanted to select more than one column from a table, you can use `,` between the column names. let's select `country_id` and `country_name` from `countries`.
 
@@ -26,7 +26,7 @@ SELECT country_id, country_name FROM countries;
 
 Result:
 
-![[Screenshot from 2023-11-02 11-57-39.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/b4555165-ab91-42b8-8cc2-d15d7d8f2440)
 
 
 if you wanted to select every column from a table use `*` symbol. 
@@ -88,7 +88,7 @@ In Ecto.Repo, there is a function called Repo.all/1. It will fetch all the recor
 
 Result:
 
-![[Screenshot from 2023-11-02 13-45-54.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/77832649-0f48-4d24-a7f6-0ecbd2c31f37)
 
 ##### 2.  Using `select/3`
 
@@ -102,7 +102,7 @@ SqlEcto.Hr.Country |> select([c], [c.country_name, c.region_id]) |> SqlEcto.Repo
 
 Result:
 
-![[Screenshot from 2023-11-03 09-15-31.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/ab47d661-5233-487e-9bd8-40dc39c68ba0)
 
 Explanation:
 
