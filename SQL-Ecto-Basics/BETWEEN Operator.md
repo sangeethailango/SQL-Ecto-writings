@@ -16,7 +16,7 @@ Both code will give the same results.
 
 Result:
 
-![[Screenshot from 2023-11-04 10-44-25.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/9808054a-eaba-4a11-8793-146c7affa1b0)
 
 You can see that the above record's `job_id` is between 5 to 9.
 
