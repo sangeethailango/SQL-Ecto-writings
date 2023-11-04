@@ -1,4 +1,4 @@
-To check either one of the condition `OR` is used. In `OR` either one can be true or both. 
+To check either one of the condition in `WHERE`, `OR` is used. In `OR` either one can be true or both. it is used in `where`.
 
 Example:
 
@@ -20,6 +20,8 @@ Result:
 The first 3 records satisfy ` first_name ILIKE 'A%'` this condition. The next 6 rows satisfy `phone_number is null` condition.  So each records satisfy either of the condition.
 
 # Ecto query for  `OR`
+
+`or/2` function
 
 In Ecto you can check for the records which satisfy either one of the condition by using `or/2` function.
 

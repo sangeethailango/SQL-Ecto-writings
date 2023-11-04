@@ -1,4 +1,4 @@
-Using comparison operators, you can only use one operator for one expression. But logical operators allows you to use multiple logical operators in one expression. 
+Using comparison operators, you can only use one operator in `WHERE` But logical operators allows you to use multiple logical operators in one `WHERE`. 
 
 ##### List of logical operators
 

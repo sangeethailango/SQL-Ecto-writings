@@ -1,4 +1,4 @@
-To fetch records which is having no value or null value for a column `IS NULL` is used.  
+To fetch records which is having no value or null value for a column `IS NULL` is used.  `IS NULL` is used in `WHERE` command.
 
 Example:
 

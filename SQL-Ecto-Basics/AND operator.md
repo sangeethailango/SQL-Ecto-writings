@@ -1,4 +1,4 @@
-To check for two conditions in one query `AND` is used. In `AND` both the condition should return true. 
+To check for two conditions in one query in `WHERE`,  `AND` is used. In `AND` both the condition should return true.  
 
 Example:
 

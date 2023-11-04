@@ -1,5 +1,5 @@
 
-`LIKE` operator is used to match string values. You can fetch records which contains some particular string characters.  Like **comparison operator**,  **Logical operators** are also used in `where` command.
+`LIKE` operator is used to match string values in `WHERE`. You can fetch records which contains some particular string characters.   
 
 Example:
 
