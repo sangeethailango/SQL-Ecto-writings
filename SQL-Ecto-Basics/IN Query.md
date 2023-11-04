@@ -11,7 +11,7 @@ The above code will fetch `employees` records whose `job_id` is either 9 or 5 or
 
 Result:
 
-![[Screenshot from 2023-11-04 09-59-13.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/30ba7a0d-2333-4d3f-b231-60e24b2ce122)
 
 You can see in the above table, that all records have `job_id` as either 9 or 5 or 6. To check records with multiple values `IN` is used. `IN` allows us to check strings also.
 
@@ -28,6 +28,6 @@ SqlEcto.Hr.Employee |> where([c], c.job_id in [9, 6, 5]) |> SqlEcto.Repo.all()
 The above code will fetch `SqlEcto.Hr.Employee` whose `job_id` is 9 or 6 or 5.
 
 Result:
-![[Screenshot from 2023-11-04 10-26-12.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/6cceab3d-a88b-4112-bdde-44c7dd1cebec)
 
 You can see in the above example, that both 3 structs contains `job_id` as either 9 or 6 or 5.
