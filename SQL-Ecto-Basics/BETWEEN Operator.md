@@ -16,7 +16,7 @@ Both code will give the same results.
 
 Result:
 
-![[Pasted image 20231104154239.png]]
+![[Screenshot from 2023-11-04 10-44-25.png]]
 
 You can see that the above record's `job_id` is between 5 to 9.
 
