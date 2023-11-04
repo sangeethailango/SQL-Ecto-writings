@@ -29,7 +29,7 @@ Example 1:
 
 we have `employees` table. Let's select those records whose salary is **less than** 6000 using `<` operator.
 
-![[Screenshot from 2023-11-03 11-45-03.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/f0b1f072-5e01-427e-8262-d8ddc127630b)
 
 ``` SQL
 select * from employees where salary < 6000;
@@ -37,7 +37,7 @@ select * from employees where salary < 6000;
 
 Result:
 
-![[Screenshot from 2023-11-03 11-46-57.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/7d9289d6-56a8-44fb-b4e9-8be30a3a4b1a)
 
 Example 2:
 
