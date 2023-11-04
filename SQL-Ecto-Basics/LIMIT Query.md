@@ -31,6 +31,7 @@ Example:
 ```
 
 Result:
+
 ![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/d6dbe4c5-938e-4683-a155-2b6183c7ab91)
 
 
