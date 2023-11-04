@@ -14,7 +14,7 @@ We are ordering `employees` with `last_name` ordered in ascending way.
 Result:
 
 
-![[Screenshot from 2023-11-04 11-53-29.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/df557a87-e9d0-4d02-b529-1d4196d47ebb)
 
 You can see that from the above example, that `last_name` is order in ascending order. starting from A.
 
@@ -28,7 +28,7 @@ SELECT * FROM employees ORDER BY last_name DESC;
 
 `DESC` will order in descending way.
 
-![[Screenshot from 2023-11-04 11-58-04.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/a85c07bf-cf21-4de0-b244-bdb2f5885494)
 
 `last_name` is in descending order. Starting from W.
 
@@ -50,7 +50,7 @@ SqlEcto.Hr.Employee |> order_by(asc: :last_name) |> SqlEcto.Repo.all()
 
 Result:
 
-![[Screenshot from 2023-11-04 12-06-31.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/6c3c5b66-3cbb-4155-8f50-679ac76224fd)
 
 you can see that `last_name` is started from Whalen and descending to Vollman.
 
@@ -61,6 +61,6 @@ SqlEcto.Hr.Employee |> order_by(asc: :last_name) |> SqlEcto.Repo.all()
 ```
 
 Result:
-![[Screenshot from 2023-11-04 12-07-57.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/e4077fec-83c8-4a50-b800-1dea709bf228)
 
 you can see that `last_name` is started from Austin and Ascending to Baida.
