@@ -28,7 +28,7 @@ This database manages the HR data of a small business.
 
 The following diagram explains the tables in the sql_ecto_repo database.
 
-![[Screenshot from 2023-10-31 15-05-55.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/3f1e6e08-2daf-4083-9beb-2d2256777314)
 
 
 Number of records in each tables:
