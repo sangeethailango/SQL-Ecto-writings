@@ -11,7 +11,7 @@ So all `job_id = 5` ,  `employees` with more than 9000 will get listed.
 
 Result:
 
-![[Screenshot from 2023-11-04 11-14-26.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/29b561cf-c535-4e70-a2a9-45ac8bf7a6e5)
 You can see in the above example that we have only 2 `employees` with `job_id` 5 and more than 9000 salary.
 
 Using not and <, < is no use.
@@ -43,4 +43,4 @@ the above code will fetch `SqlEcto.Hr.Employee` whose `job_id` is 5 and salary i
 
 Result:
 
-![[Screenshot from 2023-11-04 11-24-19.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/6a93dd22-56db-4fee-91b5-6b8579199478)
