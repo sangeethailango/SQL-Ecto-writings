@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "c3f21665bba33229",
+    "type": "split",
+    "children": [
+      {
+        "id": "4cc05cfbce0a1429",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9098f9955c39f2ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SQL-Ecto-Basics/LIKE Operator.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "edb606e2a57fa5f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "432acfe21eeee112",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43f185a13d8fa7dc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b134493a7056fe4c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2effbd1000694fbb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 394.5
+  },
+  "right": {
+    "id": "7c30c34bb94c3351",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dc9babd29add3cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ab420f4109d0a36",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SQL-Ecto-Basics/LIKE Operator.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d5b155f45678119a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "SQL-Ecto-Basics/LIKE Operator.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0c624068496a1ae1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b5a87251c216403a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SQL-Ecto-Basics/LIKE Operator.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9098f9955c39f2ed",
+  "lastOpenFiles": [
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 12-07-57.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 12-06-31.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-58-04.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-53-29.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-24-19.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-14-26.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 10-44-25.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 10-26-12.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 09-59-13.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 16-45-55.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 16-28-18.png",
+    "SQL-Ecto-Basics/README.md",
+    "SQL-Ecto-Basics/Logical operators.md",
+    "SQL-Ecto-Basics/BETWEEN Operator.md",
+    "SQL-Ecto-Basics/ORDER BY.md",
+    "SQL-Ecto-Basics/LIMIT Query.md",
+    "SQL-Ecto-Basics/OR operator.md",
+    "SQL-Ecto-Basics/NOT Operator.md",
+    "SQL-Ecto-Basics/LIKE Operator.md",
+    "SQL-Ecto-Basics/AND operator.md",
+    "SQL-Ecto-Basics/IN Query.md",
+    "SQL-Ecto-Basics/WHERE Query.md",
+    "SQL-Ecto-Basics/IS NULL operator.md",
+    "SQL-Ecto-Basics/Introduction.md",
+    "SQL-Ecto-Basics/SELECT Query.md",
+    "Basic_level-until_IN_query/NOT Operator.md",
+    "SQL-Ecto-Basics/Comparison operators.md",
+    "SQL-Ecto-Basics",
+    "README.md",
+    "Basic_level-until_IN_query/README.md",
+    "Basic_level-until_IN_query/Readme.md",
+    "Basic_level-until_IN_query/OR operator.md",
+    "Basic_level-until_IN_query/SELECT Query.md",
+    "Basic_level-until_IN_query/Comparison operators.md",
+    "Basic_level-until_IN_query/AND operator.md",
+    "Basic_level-until_IN_query/LIKE Operator.md",
+    "Basic_level-until_IN_query/IS NULL operator.md"
+  ]
+}
