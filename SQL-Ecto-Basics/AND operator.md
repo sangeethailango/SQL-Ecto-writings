@@ -13,7 +13,7 @@ Here we have two conditions.
 
 We are using the `AND` operator in between the two conditions. So it will look for `employees` whose `phone_number` is nil and `first_name` starts from J or j.  And will return only records which satisfy both sides the condition.
 
-![[Screenshot from 2023-11-03 16-10-43.png]]
+![[Pasted image 20231104153447.png]]
 
 You can use as many `AND` statements you want.
 
@@ -36,6 +36,6 @@ Also we are limiting our records to 2.
 
 Result:
 
-![[Screenshot from 2023-11-03 16-19-41.png]]
+![[Pasted image 20231104153422.png]]
 
 The above is result whose `phone_number` is nil and `first_name` starts with J or j

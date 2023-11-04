@@ -2,12 +2,6 @@ SELECT and FROM
 
 To view a table, or any columns from a table, `SELECT` and `FROM` are used.  As it name suggest it will `select` a_column `from` a_table. It has to be in that order only. This is the common query in all the SQL queries. 
 
-### **Syntax**
-
-``` SQL
-SELECT <column_name> FROM <table_name>;
-```
-
 ### **Example**
 
  ![[Screenshot from 2023-10-31 16-32-07.png]]
@@ -24,7 +18,7 @@ Result:
 
 ![[Screenshot from 2023-10-31 16-37-13.png]]
 
-if you wanted to select more than one column from a table, you can use `,` between the column names. let's select `country_id` and `country_name`.
+if you wanted to select more than one column from a table, you can use `,` between the column names. let's select `country_id` and `country_name` from `countries`.
 
 ``` SQL
 SELECT country_id, country_name FROM countries;
