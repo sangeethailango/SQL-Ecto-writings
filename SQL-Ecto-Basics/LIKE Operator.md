@@ -17,7 +17,7 @@ Result:
 
 `LIKE` is case sensitive. Meaning If you put `like A%` it will only give those records whose `first_name` starts with **A** not the small letter **a**, to avoid this use `ilike`
 
-![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/e96695e2-a49e-48ea-a496-33daf53bda3e)
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/67242dc1-2aba-4de6-b543-0ab46cf36097)
 
 ``` SQL
 SELECT * FROM employees WHERE first_name ILIKE 'a%';
@@ -25,7 +25,7 @@ SELECT * FROM employees WHERE first_name ILIKE 'a%';
 
 Result:
 
-![Uploading image.png…]()
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/57f6cb02-3d5b-458c-91d6-ee9b7d5fd3ac)
 
 
 # Ecto query for `like`
@@ -51,4 +51,4 @@ SqlEcto.Hr.Employee |> where([c], ilike(c.first_name, "a%")) |> SqlEcto.Repo.all
 
 The above code will search for employees whose `first_name` starts with a and A. 
 
-![Uploading image.png…]()
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/c5da1ec5-1b2f-4b09-87e4-4b4f95259c18)
