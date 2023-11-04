@@ -22,12 +22,12 @@ You can see in the above table, that all records have `job_id` as either 9 or 5 
 Example:
 
 ``` Ecto
-SqlEcto.Hr.Employee |> where([c], c.job_id in [9, 6, 5]) |> SqlEcto.Repo.all()
+SqlEcto.Hr.Employee |> where([c], c.job_id in [1, 2, 3]) |> SqlEcto.Repo.all()
 ```
 
-The above code will fetch `SqlEcto.Hr.Employee` whose `job_id` is 9 or 6 or 5.
+The above code will fetch `SqlEcto.Hr.Employee` whose `job_id` is 1 or 2 or 3.
 
 Result:
 ![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/6cceab3d-a88b-4112-bdde-44c7dd1cebec)
 
-You can see in the above example, that both 3 structs contains `job_id` as either 9 or 6 or 5.
+You can see in the above example, that both 3 structs contains `job_id` as either 1 or 2 or 3.
