@@ -18,7 +18,7 @@ Result:
 
 You can see that from the above example, that `last_name` is order in ascending order. starting from A.
 
-#### `DESC`
+#### `ASC`
 
 Example:
 
@@ -45,7 +45,7 @@ Example:
 
 
 ``` Ecto
-SqlEcto.Hr.Employee |> order_by(asc: :last_name) |> SqlEcto.Repo.all()
+SqlEcto.Hr.Employee |> order_by(DESC: :last_name) |> SqlEcto.Repo.all()
 ```
 
 Result:
