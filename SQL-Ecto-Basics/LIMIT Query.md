@@ -3,7 +3,7 @@ To limit the number records from being fetched, `LIMIT` command is used.
 
 In the below example, The inserted records in the `countries` table are 25. 
 
-![[Screenshot from 2023-10-31 16-37-13.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/91f2ca32-31bd-45cd-a0df-8ca319cb3840)
 
 Now let's set the limit to it.
 
@@ -13,7 +13,7 @@ Now let's set the limit to it.
 
 Result:
 
-![[Screenshot from 2023-11-03 09-52-38.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/f7249fe7-ce93-4de6-8486-2e2550940dd6)
 
 we are limiting the records to 10.
 
@@ -31,7 +31,7 @@ Example:
 ```
 
 Result:
-![[Screenshot from 2023-11-03 15-42-56-1.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/6d8a82d0-0a67-4441-bdef-3b52a0048ba5)
 
 
 
