@@ -1,3 +1,4 @@
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/10436463/3655141e-85ae-4f86-b15a-0cddb873625f)
 
 `LIKE` operator is used to match string values in `WHERE`. You can fetch records which contains some particular string characters.   
 
