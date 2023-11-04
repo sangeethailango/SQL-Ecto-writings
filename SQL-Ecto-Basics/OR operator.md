@@ -15,7 +15,7 @@ The above code will return those records which satisfy either one of the above c
 
 Result:
 
-![[Screenshot from 2023-11-03 16-28-18.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/c2583353-3097-4d8d-a936-9262d73ff2dd)
 
 The first 3 records satisfy ` first_name ILIKE 'A%'` this condition. The next 6 rows satisfy `phone_number is null` condition.  So each records satisfy either of the condition.
 
@@ -38,7 +38,7 @@ Here we have checking for two functions.
 
 Result:
 
-![[Screenshot from 2023-11-03 16-45-55.png]]
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/6a64fd0b-2ca1-4ef2-ab38-22a2710d46d4)
 
 In the above example, The first struct's email is  `bruce.ernst@sqltutorial.org` So it satisfying the `ilike(c.email, "bruce.ernst@sqltutorial.org"))` condition.
 The second struct `phone_number` is nil so it is satisfying the `is_nil(c.phone_number)`  condition.
