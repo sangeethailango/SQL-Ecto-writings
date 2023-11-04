@@ -51,4 +51,4 @@ SqlEcto.Hr.Employee |> where([c], ilike(c.first_name, "a%")) |> SqlEcto.Repo.all
 
 The above code will search for employees whose `first_name` starts with a and A. 
 
-![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/c5da1ec5-1b2f-4b09-87e4-4b4f95259c18)
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/dca7830b-e083-473e-b83f-d82cee933ded)
