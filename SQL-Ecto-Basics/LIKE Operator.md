@@ -17,7 +17,7 @@ Result:
 
 `LIKE` is case sensitive. Meaning If you put `like A%` it will only give those records whose `first_name` starts with **A** not the small letter **a**, to avoid this use `ilike`
 
-![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/67242dc1-2aba-4de6-b543-0ab46cf36097)
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/14b70969-bcc8-4511-8431-e386601591dd)
 
 ``` SQL
 SELECT * FROM employees WHERE first_name ILIKE 'a%';
