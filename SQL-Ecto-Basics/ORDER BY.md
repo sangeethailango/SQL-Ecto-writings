@@ -41,7 +41,7 @@ SELECT * FROM employees ORDER BY last_name DESC;
 
 Example:
 
-#### `ASC`
+#### `DESC`
 
 
 ``` Ecto
