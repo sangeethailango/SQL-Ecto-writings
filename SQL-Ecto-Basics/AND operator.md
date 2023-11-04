@@ -13,7 +13,7 @@ Here we have two conditions.
 
 We are using the `AND` operator in between the two conditions. So it will look for `employees` whose `phone_number` is nil and `first_name` starts from J or j.  And will return only records which satisfy both sides the condition.
 
-![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/6892a32e-fe9a-4782-a672-cabb434f9cc0)
+![image](https://github.com/sangeethailango/SQL-Ecto-writings/assets/78719077/daa78767-a43f-45a4-9396-d5c92a188f53)
 
 You can use as many `AND` statements you want.
 
