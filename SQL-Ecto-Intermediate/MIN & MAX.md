@@ -1,0 +1,78 @@
+To get the maximum and minimum value of a column `MAX` and `MIN` is used. The value can be a numerical, character string or date. 
+For numerical the highest number will come as the max and lowest number will come as the min. For string character the closest value that starting from A will come as the minimum and the closest value that starting from Z will come as max.
+
+Example:
+
+![[Pasted image 20231106152531.png]]
+
+Let's find out highest and lowest of `max_salary` column.
+
+``` SQL
+SELECT MAX(max_salary) FROM jobs;
+```
+
+Result:
+
+![[Pasted image 20231106152738.png]]
+
+So the highest `max_salary` is 40000.
+
+``` SQL
+SELECT MIN(max_salary) FROM jobs;
+```
+
+Result:
+
+![[Pasted image 20231106152858.png]]
+
+So the lowest `max_salary` is 5000.
+
+##### Example to find highest and lowest values in string characters
+
+``` SQL
+SELECT MAX(job_title) FROM jobs;
+```
+
+Result:
+
+![[Pasted image 20231106154002.png]]
+
+As you can see that, `max` gives the value which starting letter is closest to Z.
+
+``` SQL
+SELECT MIN(job_title) FROM jobs;
+```
+
+Result:
+
+![[Pasted image 20231106154216.png]]
+
+As you can see that, `min` is giving the value which starting letter is closest to A
+
+# Ecto for `MAX` & `MIN`
+
+#### `max/1`
+
+`max/1`  is used to find the maximum value of a particular field in a schema.
+
+Example:
+
+``` Ecto
+SqlEcto.Hr.Job |> select([c], max(c.max_salary)) |> SqlEcto.Repo.all() 
+```
+
+Result:
+
+![[Pasted image 20231106153520.png]]
+
+#### `min/1`
+
+`min/1` is used to find the lowest value of a particular field in a schema
+
+```Ecto
+SqlEcto.Hr.Job |> select([c], min(c.max_salary)) |> SqlEcto.Repo.all()
+```
+
+Result:
+
+![[Pasted image 20231106153630.png]]

@@ -1,0 +1,32 @@
+`AVG` is used to find out the average of a column. It is only used on numerical values.
+
+Example:
+
+``` SQL
+SELECT AVG(max_salary) FROM jobs;
+```
+
+The above code will give the average of `max_salary` from `jobs`.
+
+Result:
+
+![[Pasted image 20231106154927.png]]
+
+As you can see in the above example, the average of `max_salary` is 13210.5206315789474.
+
+# Ecto query for `AVG`
+
+Example:
+
+``` Ecto
+SqlEcto.Hr.Job |> select([c], avg(c.max_salary)) |> SqlEcto.Repo.all()
+```
+
+`avg(c.max_salary)` will give the average of column `max_salary` from `SqlEcto.Hr.Job`.
+
+Result:
+
+![[Pasted image 20231106155215.png]]
+
+As you can see in the above example, the average of `max_salary` is 13210.5206315789474.
+
