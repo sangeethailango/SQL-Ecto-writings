@@ -1,16 +1,14 @@
 To join multiple tables based on particular column `JOIN/INNER JOIN` is used. We can join tables using  the same column that the tables have. There is four types of `JOIN`. 
 
-`INNER JOIN`
-`RIGHT JOIN`
-`LEFT JOIN`
-`FULL OUTER JOIN`
+- `INNER JOIN`
+- `RIGHT JOIN`
+- `LEFT JOIN`
+- `FULL OUTER JOIN`
 
-`INNER JOIN` is the default `JOIN`. so `JOIN` and `INNER JOIN` are same. 
+`INNER JOIN` is the default `JOIN`. so `JOIN` and `INNER JOIN` are same.  let's how `INNER JOIN`
+works.
+#### `INNER JOIN`
 
-
-For example:
-
-Example:
 #####  `employees` table
 
 ![[Pasted image 20231107104248.png]]
@@ -19,20 +17,21 @@ Example:
 
 ![[Pasted image 20231107104406.png]]
 
-The `employees` and the `jobs` table have a common column called `job_id`. We can join these two tables and create one big table using this `job_id` column.  this `JOIN/INNER JOIN` will only return rows that matches the condition written using `ON`.
+The `employees` and the `jobs` table have a common column called `job_id`. We can join these two tables and create one big table using this `job_id` column.  
 
-Syntax:
+
+Example:
 
 ``` SQL
 SELECT * FROM employees JOIN jobs ON employees.job_id = jobs.job_id;
 ```
 
-Explanation:
+`JOIN/INNER JOIN`, `ON` are used together. The above will join `employees` and `jobs` whose value in`job_id` is same.  
 
-`JOIN/INNER JOIN`, `ON` are used together. 
+Query Explanation:
 
 - `JOIN/INNER JOIN` is used to write what tables were going to be joined. Here we defined `employees` and `jobs` are going to be joined. 
-- `ON` used to tell what columns in the tables were same. In what column these tables are related to each other. Here `employees` and `jobs` column related to each other by the column `job_id`.
+- `ON` used to tell what columns in the tables were having same column. In what column these tables are related to each other. Here `employees` and `jobs` column related to each other by the column `job_id`.
 - So the above line means, join `employees` and `jobs` tables which is related to each other by the column `job_id`.
 - We are selecting every columns from the both tables to be appeared.
 
@@ -40,7 +39,7 @@ Result:
 
 ![[Pasted image 20231107110005.png]]
 
-In the above table you can see that both `employees` and `jobs` are joined together with all the columns appeared. all columns are here because we select * every columns from both tables.
+In the above table you can see that both `employees` and `jobs` are joined together with all the columns appeared. All columns are here because we select * every columns from both tables.
 
 Example to select only some columns that needs to be appeared
 
@@ -57,13 +56,11 @@ Result:
 
 # Ecto query for `JOIN` 
 
-`join/5` is used to do all joins.
+##### `:inner`
 
 Official document for `join/5` function:  https://hexdocs.pm/ecto/Ecto.Query.html#join/5
 
-It will accept 4 arguments. 
-
-in expression,
+`join/5` is used to do all types of joins. It will accept 4 arguments. 
 
 1. A schema
 2. `join` type. :inner, :right, :left, :full,...
@@ -73,8 +70,360 @@ in expression,
 
 Example:
 
-```Ecto
+Just to show the whole records in the `SqlEcto.Hr.Country` in table. 
 
+![[Pasted image 20231107155511.png]]
+
+PSQL example `regions` table
+
+![[Pasted image 20231107155541.png]]
+
+Now let's do `inner join` for this 2 table in `Ecto`
+
+```Ecto
+SqlEcto.Hr.Region |> join(:inner, [r], c in SqlEcto.Hr.Country, on: r.region_id == c.region_id) |> SqlEcto.Repo.all() 
 ```
 
+The above query will only return rows whose `region_id` are same in both  `SqlEcto.Hr.Region` and `SqlEcto.Hr.Country`
 
+Explanation:
+######  `join(:inner, [r], c in SqlEcto.Hr.Country, on: r.region_id == c.region_id)` 
+
+- `:inner` is a join type
+- `[r]` is a variable is a reference to `SqlEcto.Hr.Region`
+- `c in SqlEcto.Hr.Country` is another schema with reference variable
+- `on: r.region_id == c.region_id` is the common fields for both schemas.
+
+Result:
+
+``` iex 
+[
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 2,
+      region_name: "Americas"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "AR",
+      country_name: "Argentina",
+      region_id: 2
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 3,
+      region_name: "Asia"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "AU",
+      country_name: "Australia",
+      region_id: 3
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 1,
+      region_name: "Europe"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "BE",
+      country_name: "Belgium",
+      region_id: 1
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 2,
+      region_name: "Americas"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "BR",
+      country_name: "Brazil",
+      region_id: 2
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 2,
+      region_name: "Americas"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "CA",
+      country_name: "Canada",
+      region_id: 2
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 1,
+      region_name: "Europe"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "CH",
+      country_name: "Switzerland",
+      region_id: 1
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 3,
+      region_name: "Asia"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "CN",
+      country_name: "China",
+      region_id: 3
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 1,
+      region_name: "Europe"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "DE",
+      country_name: "Germany",
+      region_id: 1
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 1,
+      region_name: "Europe"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "DK",
+      country_name: "Denmark",
+      region_id: 1
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 4,
+      region_name: "Middle East and Africa"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "EG",
+      country_name: "Egypt",
+      region_id: 4
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 1,
+      region_name: "Europe"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "FR",
+      country_name: "France",
+      region_id: 1
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 3,
+      region_name: "Asia"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "HK",
+      country_name: "HongKong",
+      region_id: 3
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 4,
+      region_name: "Middle East and Africa"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "IL",
+      country_name: "Israel",
+      region_id: 4
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 3,
+      region_name: "Asia"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "IN",
+      country_name: "India",
+      region_id: 3
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 1,
+      region_name: "Europe"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "IT",
+      country_name: "Italy",
+      region_id: 1
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 3,
+      region_name: "Asia"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "JP",
+      country_name: "Japan",
+      region_id: 3
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 4,
+      region_name: "Middle East and Africa"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "KW",
+      country_name: "Kuwait",
+      region_id: 4
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 2,
+      region_name: "Americas"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "MX",
+      country_name: "Mexico",
+      region_id: 2
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 4,
+      region_name: "Middle East and Africa"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "NG",
+      country_name: "Nigeria",
+      region_id: 4
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 1,
+      region_name: "Europe"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "NL",
+      country_name: "Netherlands",
+      region_id: 1
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 3,
+      region_name: "Asia"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "SG",
+      country_name: "Singapore",
+      region_id: 3
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 1,
+      region_name: "Europe"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "UK",
+      country_name: "United Kingdom",
+      region_id: 1
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 2,
+      region_name: "Americas"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "US",
+      country_name: "United States of America",
+      region_id: 2
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 4,
+      region_name: "Middle East and Africa"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "ZM",
+      country_name: "Zambia",
+      region_id: 4
+    }
+  ],
+  [
+    %SqlEcto.Hr.Region{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "regions">,
+      region_id: 4,
+      region_name: "Middle East and Africa"
+    },
+    %SqlEcto.Hr.Country{
+      __meta__: #Ecto.Schema.Metadata<:loaded, "countries">,
+      country_id: "ZW",
+      country_name: "Zimbabwe",
+      region_id: 4
+    }
+  ]
+]
+```
+
+In the above iex shell you can see that, only matching `region_id` in both `SqlEcto.Hr.Region` and `SqlEcto.Hr.Country` are returned. `region_id` 5, 6, 7 are not returned in the results as these `region_id` don't have a matching value in `SqlEcto.Hr.Country`.
