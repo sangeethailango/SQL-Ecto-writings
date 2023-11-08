@@ -1,0 +1,92 @@
+Using `UNION`, you can do multiple query at once. By doing `UNION`,  Both the queries will return one table.
+
+##### `UNION`
+
+Example:
+
+`regions` table
+
+![[Pasted image 20231108115523.png]]
+
+`countries` table
+
+![[Pasted image 20231108115607.png]]
+
+
+``` SQL
+SELECT region_id FROM regions UNION SELECT region_id FROM countries;
+```
+
+Here, we are doing 2 queries. And combining it by `UNION`.  This query will return region_id from both the tables. But it won't return duplicate values.
+
+In `union`,
+
+- column name have to be same in both the queries. If you put any different column name in the queries, it will return error.
+- both columns should have the same datatypes
+
+Result:
+
+![[Pasted image 20231108115708.png]]
+
+Here, you can see that `region_id` from both table have returned but without duplicate.
+
+To get the duplicate also, use `UNION ALL`
+
+##### `UNION ALL`
+
+`UNION ALL` will return duplicate values also.
+
+Example:
+
+``` SQL
+SELECT region_id FROM regions UNION ALL SELECT region_id FROM countries;
+```
+
+Result:
+
+![[Pasted image 20231108120942.png]]
+
+
+# Ecto query for `UNION`
+
+##### `union/2` 
+
+In Ecto `union/2` let's you, combine multiple queries. `union/2` expects 2 arguments.
+first query and second query. So let's create 2 queries and combine them using `union/2` function. 
+
+###### First query. 
+
+``` Ecto
+region_id_from_country = SqlEcto.Hr.Country |> select([c], %{"region_id" => c.region_id}) 
+```
+
+Here, we are selecting `region_id` from `SqlEcto.Hr.Country` and assigning a variable called `region_id_from_country`.
+
+##### Second query.
+
+``` Ecto
+region_id_from_region = SqlEcto.Hr.Region |> select([r], %{"region_id" => r.region_id})
+```
+
+Here, we are selecting `region_id` from `SqlEcto.Hr.Region` and assigning a variable called `region_id_from_region`.  Also we are putting both queries in a map data structure using `%{}`. Let's combine both queries.
+
+``` Ecto
+union(region_id_from_country, ^region_id_from_region) |> SqlEcto.Repo.all()
+```
+
+union expects it's second argument to contain `^` symbol, to indicate that the argument is already defined.  
+
+Result:
+
+![[Pasted image 20231108142449.png]]
+
+As we mentioned it is returned in a map `%{}`. To get duplicate values, use `union_all/2` function
+
+``` Ecto
+union_all(region_id_from_country, ^region_id_from_region) |> SqlEcto.Repo.all()
+```
+
+Result:
+
+![[Pasted image 20231108142659.png]]
+

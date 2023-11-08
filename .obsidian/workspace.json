@@ -11,15 +11,26 @@
             "id": "9098f9955c39f2ed",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231108164532.png"
+              }
+            }
+          },
+          {
+            "id": "4070de3a775204fb",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL-Ecto-Basics/LIKE Operator.md",
+                "file": "SQL-Ecto-Intermediate/SELF JOIN.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.5
+    "width": 278.5
   },
   "right": {
     "id": "7c30c34bb94c3351",
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL-Ecto-Basics/LIKE Operator.md",
+                "file": "SQL-Ecto-Intermediate/SELF JOIN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL-Ecto-Basics/LIKE Operator.md",
+                "file": "SQL-Ecto-Intermediate/SELF JOIN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL-Ecto-Basics/LIKE Operator.md"
+                "file": "SQL-Ecto-Intermediate/SELF JOIN.md"
               }
             }
           }
@@ -146,44 +157,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9098f9955c39f2ed",
+  "active": "4070de3a775204fb",
   "lastOpenFiles": [
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 12-07-57.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 12-06-31.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-58-04.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-53-29.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-24-19.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-14-26.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 10-44-25.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 10-26-12.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-04 09-59-13.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-03 16-45-55.png",
-    "SQL-Ecto-Basics/Screenshot from 2023-11-03 16-28-18.png",
-    "SQL-Ecto-Basics/README.md",
-    "SQL-Ecto-Basics/Logical operators.md",
-    "SQL-Ecto-Basics/BETWEEN Operator.md",
-    "SQL-Ecto-Basics/ORDER BY.md",
-    "SQL-Ecto-Basics/LIMIT Query.md",
-    "SQL-Ecto-Basics/OR operator.md",
-    "SQL-Ecto-Basics/NOT Operator.md",
-    "SQL-Ecto-Basics/LIKE Operator.md",
-    "SQL-Ecto-Basics/AND operator.md",
-    "SQL-Ecto-Basics/IN Query.md",
-    "SQL-Ecto-Basics/WHERE Query.md",
-    "SQL-Ecto-Basics/IS NULL operator.md",
-    "SQL-Ecto-Basics/Introduction.md",
+    "Pasted image 20231108212727.png",
+    "Pasted image 20231108205230.png",
+    "SQL-Ecto-Intermediate/LEFT JOIN.md",
+    "Pasted image 20231108164532.png",
+    "Pasted image 20231108165320.png",
+    "Pasted image 20231108165547.png",
+    "Pasted image 20231108172108.png",
+    "SQL-Ecto-Intermediate/SELF JOIN.md",
+    "SQL-Ecto-Intermediate/DISTINCT.md",
+    "SQL-Ecto-Intermediate/UNION OPERATOR.md",
+    "Pasted image 20231108142659.png",
+    "Pasted image 20231108142449.png",
+    "SQL-Ecto-Intermediate/GROUP BY.md",
+    "Pasted image 20231108120942.png",
+    "Pasted image 20231108115708.png",
+    "Pasted image 20231108115607.png",
     "SQL-Ecto-Basics/SELECT Query.md",
-    "Basic_level-until_IN_query/NOT Operator.md",
+    "SQL-Ecto-Basics/AND operator.md",
+    "SQL-Ecto-Basics/BETWEEN Operator.md",
     "SQL-Ecto-Basics/Comparison operators.md",
-    "SQL-Ecto-Basics",
-    "README.md",
-    "Basic_level-until_IN_query/README.md",
-    "Basic_level-until_IN_query/Readme.md",
-    "Basic_level-until_IN_query/OR operator.md",
-    "Basic_level-until_IN_query/SELECT Query.md",
-    "Basic_level-until_IN_query/Comparison operators.md",
-    "Basic_level-until_IN_query/AND operator.md",
-    "Basic_level-until_IN_query/LIKE Operator.md",
-    "Basic_level-until_IN_query/IS NULL operator.md"
+    "SQL-Ecto-Basics/IN Query.md",
+    "SQL-Ecto-Basics/Introduction.md",
+    "SQL-Ecto-Basics/OR operator.md",
+    "SQL-Ecto-Basics/ORDER BY.md",
+    "SQL-Ecto-Basics/README.md",
+    "SQL-Ecto-Basics.zip",
+    "SQL-Ecto-Intermediate/FULL OUTER JOIN.md",
+    "SQL-Ecto-Intermediate/RIGHT JOIN.md",
+    "SQL-Ecto-Intermediate/OUTER JOIN.md",
+    "SQL-Ecto-Intermediate/JOIN.md",
+    "SQL-Ecto-Intermediate/SUM.md",
+    "SQL-Ecto-Intermediate/MIN & MAX.md",
+    "SQL-Ecto-Intermediate/COUNT.md",
+    "SQL-Ecto-Intermediate/AVG.md",
+    "SQL-Ecto-Intermediate",
+    "SQL-Ecto-Basics/WHERE Query.md",
+    "SQL-Ecto-Basics/NOT Operator.md",
+    "SQL-Ecto-Basics/Logical operators.md",
+    "SQL-Ecto-Basics"
   ]
 }
