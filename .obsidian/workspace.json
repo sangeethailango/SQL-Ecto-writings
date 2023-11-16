@@ -4,33 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "4cc05cfbce0a1429",
+        "id": "6de5124608c41155",
         "type": "tabs",
         "children": [
           {
-            "id": "9098f9955c39f2ed",
+            "id": "962aa568b919253f",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "Pasted image 20231108164532.png"
-              }
-            }
-          },
-          {
-            "id": "4070de3a775204fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQL-Ecto-Intermediate/SELF JOIN.md",
-                "mode": "source",
-                "source": false
+                "file": "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-58-04.png"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -59,8 +46,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "iex",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -80,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 409.5
   },
   "right": {
     "id": "7c30c34bb94c3351",
@@ -96,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL-Ecto-Intermediate/SELF JOIN.md",
+                "file": "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-58-04.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL-Ecto-Intermediate/SELF JOIN.md",
+                "file": "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-58-04.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL-Ecto-Intermediate/SELF JOIN.md"
+                "file": "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-58-04.png"
               }
             }
           }
@@ -157,46 +144,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4070de3a775204fb",
+  "active": "962aa568b919253f",
   "lastOpenFiles": [
-    "Pasted image 20231108212727.png",
-    "Pasted image 20231108205230.png",
-    "SQL-Ecto-Intermediate/LEFT JOIN.md",
-    "Pasted image 20231108164532.png",
-    "Pasted image 20231108165320.png",
-    "Pasted image 20231108165547.png",
-    "Pasted image 20231108172108.png",
-    "SQL-Ecto-Intermediate/SELF JOIN.md",
-    "SQL-Ecto-Intermediate/DISTINCT.md",
-    "SQL-Ecto-Intermediate/UNION OPERATOR.md",
-    "Pasted image 20231108142659.png",
-    "Pasted image 20231108142449.png",
-    "SQL-Ecto-Intermediate/GROUP BY.md",
-    "Pasted image 20231108120942.png",
-    "Pasted image 20231108115708.png",
-    "Pasted image 20231108115607.png",
-    "SQL-Ecto-Basics/SELECT Query.md",
-    "SQL-Ecto-Basics/AND operator.md",
-    "SQL-Ecto-Basics/BETWEEN Operator.md",
-    "SQL-Ecto-Basics/Comparison operators.md",
-    "SQL-Ecto-Basics/IN Query.md",
-    "SQL-Ecto-Basics/Introduction.md",
-    "SQL-Ecto-Basics/OR operator.md",
-    "SQL-Ecto-Basics/ORDER BY.md",
-    "SQL-Ecto-Basics/README.md",
-    "SQL-Ecto-Basics.zip",
-    "SQL-Ecto-Intermediate/FULL OUTER JOIN.md",
-    "SQL-Ecto-Intermediate/RIGHT JOIN.md",
-    "SQL-Ecto-Intermediate/OUTER JOIN.md",
-    "SQL-Ecto-Intermediate/JOIN.md",
-    "SQL-Ecto-Intermediate/SUM.md",
-    "SQL-Ecto-Intermediate/MIN & MAX.md",
-    "SQL-Ecto-Intermediate/COUNT.md",
-    "SQL-Ecto-Intermediate/AVG.md",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-53-29.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 11-14-26.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-04 10-44-25.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 16-28-18.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 16-10-43.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 15-29-43.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 14-44-12.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 14-42-44.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 14-00-22.png",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-03 11-45-03.png",
+    "SQL-Ecto-Basics/03. LIMIT Query.md",
+    "SQL-Ecto-Basics/Screenshot from 2023-11-02 11-57-39.png",
+    "SQL-Ecto-Basics/02. SELECT Query.md",
+    "SQL-Ecto-Basics/02. Aliases in Ecto.md",
+    "SQL-Ecto-Basics/01. Introduction.md",
+    "SQL-Ecto-Basics/14. ORDER BY.md",
+    "SQL-Ecto-Basics/13. NOT Operator.md",
+    "SQL-Ecto-Basics/12. OR operator.md",
+    "SQL-Ecto-Basics/11. IS NULL operator.md",
+    "SQL-Ecto-Basics/10. IN Query.md",
+    "SQL-Ecto-Basics/09. BETWEEN Operator.md",
+    "SQL-Ecto-Basics/08. AND operator.md",
+    "SQL-Ecto-Basics/07. LIKE Operator.md",
+    "SQL-Ecto-Basics/06. Logical operators.md",
+    "SQL-Ecto-Basics/05. Comparison operators.md",
+    "Screenshot from 2023-11-03 11-46-57.png.md",
+    "SQL-Ecto-Basics/04. WHERE Query.md",
+    "[[02..md",
+    "[[01. Introduction]].md",
+    "[[01..md",
+    "02..md",
+    "[[introdu]].md",
+    "SQL-Ecto-Intermediate/10. LEFT JOIN.md",
+    "00. Aliases in Ecto.md",
+    "SQL-Ecto-Intermediate/01. COUNT.md",
+    "SQL-Ecto-Intermediate/15. SELF JOIN.md",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate-CLONE/SQL-Ecto-Intermediate",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate-CLONE/SQL-Ecto-Basics.zip",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate-CLONE/SQL-Ecto-Basics",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate-CLONE",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate/SQL-Ecto-Intermediate",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate/SQL-Ecto-Basics",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate/SQL-Ecto-Basics.zip",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate",
     "SQL-Ecto-Intermediate",
-    "SQL-Ecto-Basics/WHERE Query.md",
-    "SQL-Ecto-Basics/NOT Operator.md",
-    "SQL-Ecto-Basics/Logical operators.md",
-    "SQL-Ecto-Basics"
+    "sql-ecto-writings-clone/SQL-Ecto-writings"
   ]
 }
