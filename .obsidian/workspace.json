@@ -1,0 +1,278 @@
+{
+  "main": {
+    "id": "c3f21665bba33229",
+    "type": "split",
+    "children": [
+      {
+        "id": "6de5124608c41155",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "600d2542e18413c3",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231104154938.png"
+              }
+            }
+          },
+          {
+            "id": "17fcd7fe36140800",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231114175306.png"
+              }
+            }
+          },
+          {
+            "id": "2b3f3463a9f38d37",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231116150410.png"
+              }
+            }
+          },
+          {
+            "id": "ab547f64a9ce5ec9",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231116150503.png"
+              }
+            }
+          },
+          {
+            "id": "11d3200492c86f58",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231116153449.png"
+              }
+            }
+          },
+          {
+            "id": "64a6bb92da5b7228",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231116154734.png"
+              }
+            }
+          },
+          {
+            "id": "fcddb58c864bd7d6",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231116223140.png"
+              }
+            }
+          },
+          {
+            "id": "74ab16b6bc40c5c1",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231116223140.png"
+              }
+            }
+          },
+          {
+            "id": "caf45b827bf804fe",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20231116223140.png"
+              }
+            }
+          }
+        ],
+        "currentTab": 8
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "edb606e2a57fa5f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "432acfe21eeee112",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43f185a13d8fa7dc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b134493a7056fe4c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "\"Pasted image 20231116224852\"",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2effbd1000694fbb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 559.5
+  },
+  "right": {
+    "id": "7c30c34bb94c3351",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dc9babd29add3cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ab420f4109d0a36",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Pasted image 20231116223140.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d5b155f45678119a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Pasted image 20231116223140.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0c624068496a1ae1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b5a87251c216403a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Pasted image 20231116223140.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b134493a7056fe4c",
+  "lastOpenFiles": [
+    "Pasted image 20231116154734.png",
+    "Pasted image 20231116153449.png",
+    "Pasted image 20231116150503.png",
+    "Pasted image 20231116150410.png",
+    "Pasted image 20231114175306.png",
+    "Pasted image 20231114105812.png",
+    "Pasted image 20231116115825.png",
+    "Pasted image 20231116115728.png",
+    "Pasted image 20231114105314.png",
+    "Pasted image 20231114105010.png",
+    "Pasted image 20231114104643.png",
+    "SQL-Ecto-Intermediate/01. COUNT.md",
+    "SQL-Ecto-Intermediate/02. SUM.md",
+    "Screenshot from 2023-11-03 11-46-57.png.md",
+    "SQL-Ecto-Intermediate/04. AVG.md",
+    "SQL-Ecto-Intermediate/03. MIN & MAX.md",
+    "SQL-Ecto-Basics/08. AND operator.md",
+    "SQL-Ecto-Intermediate/15. SELF JOIN.md",
+    "SQL-Ecto-Intermediate/14. UNION OPERATOR.md",
+    "SQL-Ecto-Intermediate/13. FULL OUTER JOIN.md",
+    "SQL-Ecto-Intermediate/12. Filtering in JOIN.md",
+    "SQL-Ecto-Intermediate/11. RIGHT JOIN.md",
+    "SQL-Ecto-Intermediate/10. LEFT JOIN.md",
+    "SQL-Ecto-Intermediate/09. OUTER JOIN.md",
+    "SQL-Ecto-Intermediate/08. JOIN.md",
+    "SQL-Ecto-Intermediate/07. DISTINCT.md",
+    "SQL-Ecto-Intermediate/06. HAVING.md",
+    "SQL-Ecto-Intermediate/05. GROUP BY.md",
+    "SQL-Ecto-Basics/14. ORDER BY.md",
+    "SQL-Ecto-Basics/13. NOT Operator.md",
+    "SQL-Ecto-Basics/12. OR operator.md",
+    "SQL-Ecto-Basics/11. IS NULL operator.md",
+    "SQL-Ecto-Basics/10. IN Query.md",
+    "SQL-Ecto-Basics/09. BETWEEN Operator.md",
+    "SQL-Ecto-Basics/07. LIKE Operator.md",
+    "SQL-Ecto-Basics/06. Logical operators.md",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate-CLONE/SQL-Ecto-Intermediate",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate-CLONE/SQL-Ecto-Basics.zip",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate-CLONE/SQL-Ecto-Basics",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate-CLONE",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate/SQL-Ecto-Intermediate",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate/SQL-Ecto-Basics",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate/SQL-Ecto-Basics.zip",
+    "SQL-Ecto-writings-sangeethailango-SQL-Ecto-Intermediate",
+    "SQL-Ecto-Intermediate",
+    "sql-ecto-writings-clone/SQL-Ecto-writings"
+  ]
+}
